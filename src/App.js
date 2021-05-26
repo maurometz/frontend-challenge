@@ -10,7 +10,7 @@ const App = () => {
   const [pokemon, setPokemon] = useState(" ");
   const [pokemonData, setPokemonData] = useState([]);
   const [pokemonType, setPokemonType] = useState("");
-  // const [pokemonType2, setPokemonType2] = useState("");
+  const [pokemonType2, setPokemonType2] = useState("");
 
   const getPokemon = async () => {
     const toArray = [];
@@ -18,8 +18,12 @@ const App = () => {
       const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
       const res = await axios.get(url)
       toArray.push(res.data);
-      setPokemonType(res.data.types[0].type.name)
-      // setPokemonType2(res.data.types[1].type.name)
+      setPokemonType(res.data.types[0].type.name)     
+      if(!!res.data.types[1]){
+        setPokemonType2(res.data.types[1].type.name)
+      } else {
+        setPokemonType2(undefined)
+      }
       setPokemonData(toArray);
       console.log(res)
     } catch (e) {
@@ -83,10 +87,12 @@ const App = () => {
                 <div className="divTableCell">Tipo</div>
                 <div className="divTableCell">{pokemonType.capitalize()}</div>
               </div>
-              {/* <div className="divTableRow">
+              <div className="divTableRow">
                 <div className="divTableCell">Tipo 2</div>
-                <div className="divTableCell">{pokemonType2.capitalize()}</div>
-              </div> */}
+                {pokemonType2 && (
+                  <div className="divTableCell">{pokemonType2.capitalize()}</div>
+                )}
+              </div>
               <div className="divTableRow">
                 <div className="divTableCell">Altura</div>
                 <div className="divTableCell">{" "}{(data.height / 10)} m</div>
