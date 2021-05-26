@@ -3,14 +3,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './App.css';
 import React from "react";
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import axios from "axios";
 
 const App = () => {
   const [pokemon, setPokemon] = useState(" ");
   const [pokemonData, setPokemonData] = useState([]);
   const [pokemonType, setPokemonType] = useState("");
-  const [pokemonType2, setPokemonType2] = useState("");
+  // const [pokemonType2, setPokemonType2] = useState("");
 
   const getPokemon = async () => {
     const toArray = [];
@@ -83,10 +83,10 @@ const App = () => {
                 <div className="divTableCell">Tipo</div>
                 <div className="divTableCell">{pokemonType.capitalize()}</div>
               </div>
-              <div className="divTableRow">
+              {/* <div className="divTableRow">
                 <div className="divTableCell">Tipo 2</div>
                 <div className="divTableCell">{pokemonType2.capitalize()}</div>
-              </div>
+              </div> */}
               <div className="divTableRow">
                 <div className="divTableCell">Altura</div>
                 <div className="divTableCell">{" "}{(data.height / 10)} m</div>
