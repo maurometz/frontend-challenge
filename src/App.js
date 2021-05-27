@@ -59,7 +59,7 @@ const App = () => {
           </nav>
         </div>
       </section>
-      <div  id="home" className="formulario">
+      <div id="home" className="formulario">
         <form className="pesquisa" onSubmit={handleSubmit}>
           <label>
             <input className="escrever-pesquisa" type="text" onChange={handleChange} placeholder="Insira o nome ou número do Pokémon" />
@@ -149,7 +149,9 @@ const App = () => {
         <p>Email: maurometzoficial@gmail.com </p>
       </div>
       <footer>
-
+        <div class="footer">
+          <p>Criado por Mauro Metz</p>
+        </div>
       </footer>
     </div>
   );

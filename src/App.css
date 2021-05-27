@@ -72,3 +72,12 @@ li:nth-child(3) {
     text-align: justify;
     text-decoration: underline;
 }
+
+.footer p {
+  background: #D41C1C;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  margin: 0;
+}
