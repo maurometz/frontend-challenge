@@ -1,75 +1,74 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-/* .app {
-  
-} */
-
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.menu {
-    border-bottom: 1px solid #610d0d;
+div{
+  color: #D41C1C;
 }
 
 .menu-content {
     background-color: #D41C1C;
-    height: 150px;
+    height: 125px;
     width: 100%;
     position: fixed;
-    display: inline;
-    z-index: 10;
+    z-index: 1;
 }
 
-ul {
-  list-style: none;
+.imagem-link {
+  width: 125px;
+  height: 125px;
+}
+
+nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: 0;
-  padding-bottom: 0;
-  display: inline;
-  font-size: 38px;
-}
-
-li {
-  padding-left: 20px;
-  /* position:; */
-}
-
-li:nth-child(3) {
-  padding-right: 20px;
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-.imagem-link img {
-  display: inline;
-  width: 150px;
-  height: 150px;
-  padding-left: 30px;
-
-}
-
-.pesquisa {
-  display: flex;
+  font-size: 40px;
+  width: 125px;
+  height: 125px;
+  margin-right: 52% ;
   position: relative;
-  margin-left: 20%;
-  margin-top: 20%; 
+}
+
+ul {
+  display: flex;
+  margin-bottom: 100px;
+  list-style: none;
+}
+
+li {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+li:nth-child(3) {
+  margin-right: 30px;
 }
 
 .escrever-pesquisa {
-  width: 800px;
+  width: 70%;
+  margin-top: 25%;
+  margin-left: 10%;
+  height: 50px;
+  font-size: 40px;
+  color: #D41C1C;
 }
 
-.nav-bar {
-  display: flex;
-  background-color: #D41C1C;
-  padding-top: -10px;
+.botao-pesquisar {
+    height: 60px;
+    width: 180px;
+    background: #D41C1C;
+    color: white;
+    font-size: 35px;
+}
+
+.pokeapi {
+    color: #D41C1C;
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: underline;
 }

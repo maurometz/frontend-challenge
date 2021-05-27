@@ -18,8 +18,8 @@ const App = () => {
       const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
       const res = await axios.get(url)
       toArray.push(res.data);
-      setPokemonType(res.data.types[0].type.name)     
-      if(!!res.data.types[1]){
+      setPokemonType(res.data.types[0].type.name)
+      if (!!res.data.types[1]) {
         setPokemonType2(res.data.types[1].type.name)
       } else {
         setPokemonType2(undefined)
@@ -47,27 +47,27 @@ const App = () => {
 
   return (
     <div className="App">
-      <aside className="menu">
+      <section className="section-menu">
         <div className="menu-content">
-          <a className="imagem-link" href="#"><img src="https://i.ibb.co/yQmt4xW/logo.png" /></a>
-          
-            <ul className="nav-bar">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>
+          <nav className="nav-menu">
+            <a className="a-imagem" href="#"><img className="imagem-link" src="https://i.ibb.co/yQmt4xW/logo.png" /></a>
+            <ul className="ul-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
-          
+          </nav>
         </div>
-      </aside>
-      <div>
-      <form className="pesquisa" onSubmit={handleSubmit}>
-        <label>
-          <input className="escrever-pesquisa" type="text" onChange={handleChange} placeholder="Insira o nome ou número do Pokémon" />
-        </label>
-        <label>
-          <input className="" type="submit" value="Pesquisar" />
-        </label>
-      </form>
+      </section>
+      <div  id="home" className="formulario">
+        <form className="pesquisa" onSubmit={handleSubmit}>
+          <label>
+            <input className="escrever-pesquisa" type="text" onChange={handleChange} placeholder="Insira o nome ou número do Pokémon" />
+          </label>
+          <label>
+            <input className="botao-pesquisar" type="submit" value="Pesquisar" />
+          </label>
+        </form>
       </div>
       {pokemonData.map((data) => {
         return (
@@ -75,8 +75,6 @@ const App = () => {
 
             <img src={data.sprites["front_default"]} />
             <img src={data.sprites["front_shiny"]} />
-
-            <p>Teste de fonte</p>
             <div className="divTable">
               <div className="divTableBody"></div>
               <div className="divTableRow">
@@ -130,17 +128,29 @@ const App = () => {
                 <div className="divTableCell">{" "}{data.stats[5].base_stat}</div>
               </div>
 
-              {/* <div className="divTableRow">
-                <div className="divTableCell">Number of Battle</div>
-                <div className="divTableCell">{data.game_indices.length}</div>
-              </div> */}
-
-
             </div>
 
           </div>
         )
       })}
+
+      <div id="sobre">
+        <h1>Sobre</h1>
+        <p>Tem alguma dúvida sobre algum Pokémon? Gostaria de descubrir quais são os status daquele Pokémon? Procure o
+            nome ou número do Pokémon no Listmon e descubra.</p>
+        <p>Este site foi feito para treinar o consumo de dados de APIs com ReactJs. É possível acessar o Pokeapi pelo
+            link: <a href="https://pokeapi.co/" class="pokeapi" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
+      </div>
+
+      <div id="contato">
+        <h1>Contato</h1>
+        <p>Linkedin: linkedin.com/in/maurometz/</p>
+        <p>Github: github.com/maurometz </p>
+        <p>Email: maurometzoficial@gmail.com </p>
+      </div>
+      <footer>
+
+      </footer>
     </div>
   );
 }
