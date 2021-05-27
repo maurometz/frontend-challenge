@@ -59,6 +59,7 @@ const App = () => {
           </nav>
         </div>
       </section>
+
       <div id="home" className="formulario">
         <form className="pesquisa" onSubmit={handleSubmit}>
           <label>
@@ -134,19 +135,19 @@ const App = () => {
         )
       })}
 
-      <div id="sobre">
+      <div className="textos" id="sobre">
         <h1>Sobre</h1>
         <p>Tem alguma dúvida sobre algum Pokémon? Gostaria de descubrir quais são os status daquele Pokémon? Procure o
             nome ou número do Pokémon no Listmon e descubra.</p>
         <p>Este site foi feito para treinar o consumo de dados de APIs com ReactJs. É possível acessar o Pokeapi pelo
-            link: <a href="https://pokeapi.co/" class="pokeapi" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
+            link: <a href="https://pokeapi.co/" class="link-texto" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
       </div>
 
-      <div id="contato">
+      <div className="textos" id="contato">
         <h1>Contato</h1>
-        <p>Linkedin: linkedin.com/in/maurometz/</p>
-        <p>Github: github.com/maurometz </p>
-        <p>Email: maurometzoficial@gmail.com </p>
+        <p>Linkedin: <a class="link-texto" href="https://www.linkedin.com/in/maurometz" target="_blank" rel="noreferrer">linkedin.com/in/maurometz/</a> <br></br> 
+        Github: <a class="link-texto" href="https://github.com/maurometz" target="_blank" rel="noreferrer">github.com/maurometz</a> <br></br> 
+        Email:<br></br> maurometzoficial@gmail.com </p>
       </div>
       <footer>
         <div class="footer">
