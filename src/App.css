@@ -97,3 +97,31 @@ h1 {
 .textos{
   text-align: center;
 }
+
+.divTableCell{
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  margin: 10px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+.spacer{
+  width: 100px;
+  height: 250px;
+}
+
+.tipo2 {
+  margin-left: -100px;
+}
+
+.containerSprite{
+  margin-left: 32%;
+}
+
+.imgSprite {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+}

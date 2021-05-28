@@ -74,59 +74,56 @@ const App = () => {
         return (
           <div className="container">
 
-            <img src={data.sprites["front_default"]} />
-            <img src={data.sprites["front_shiny"]} />
+            <div className="containerSprite">
+            <img className="imgSprite" src={data.sprites["front_default"]} />
+            <img className="imgSprite" src={data.sprites["front_shiny"]} />
+            </div>
+
             <div className="divTable">
               <div className="divTableBody"></div>
+             
               <div className="divTableRow">
-                <div className="divTableCell">Nome</div>
-                <div className="divTableCell">{" "}{data.name.capitalize()}</div>
+                <div className="divTableCell"><strong>Nome:</strong> {" "}{data.name.capitalize()}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Tipo</div>
-                <div className="divTableCell">{pokemonType.capitalize()}</div>
+                <div className="divTableCell"><strong>Tipo:</strong> {pokemonType.capitalize()}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Tipo 2</div>
+
+              <div className="divTableCell"><strong>Tipo 2:</strong> </div>
                 {pokemonType2 && (
-                  <div className="divTableCell">{pokemonType2.capitalize()}</div>
+                  <div className="divTableCell  tipo2">{pokemonType2.capitalize()}</div>
                 )}
               </div>
+
               <div className="divTableRow">
-                <div className="divTableCell">Altura</div>
-                <div className="divTableCell">{" "}{(data.height / 10)} m</div>
+                <div className="divTableCell"><strong>Altura:</strong> {" "}{(data.height / 10)} m</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Peso</div>
-                <div className="divTableCell">{" "}{(data.weight / 10)} Kg</div>
+                <div className="divTableCell"><strong>Peso:</strong> {" "}{(data.weight / 10)} Kg</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">ID na Pokédex</div>
-                <div className="divTableCell">{" "}{data.id}</div>
+                <div className="divTableCell"><strong>ID na Pokédex:</strong> {" "}{data.id}</div>
+              </div>
+
+              
+              <div className="divTableRow">
+                <div className="divTableCell"><strong>Vida:</strong> {" "}{data.stats[0].base_stat}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Vida</div>
-                <div className="divTableCell">{" "}{data.stats[0].base_stat}</div>
+                <div className="divTableCell"><strong>Ataque:</strong> {" "}{data.stats[1].base_stat}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Ataque</div>
-                <div className="divTableCell">{" "}{data.stats[1].base_stat}</div>
+                <div className="divTableCell"><strong>Defesa:</strong> {" "}{data.stats[2].base_stat}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Defesa</div>
-                <div className="divTableCell">{" "}{data.stats[2].base_stat}</div>
+                <div className="divTableCell"><strong>Ataque Especial:</strong> {" "}{data.stats[3].base_stat}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Ataque Especial</div>
-                <div className="divTableCell">{" "}{data.stats[3].base_stat}</div>
+                <div className="divTableCell"><strong>Defesa Especial:</strong> {" "}{data.stats[4].base_stat}</div>
               </div>
               <div className="divTableRow">
-                <div className="divTableCell">Defesa Especial</div>
-                <div className="divTableCell">{" "}{data.stats[4].base_stat}</div>
-              </div>
-              <div className="divTableRow">
-                <div className="divTableCell">Velocidade</div>
-                <div className="divTableCell">{" "}{data.stats[5].base_stat}</div>
+                <div className="divTableCell"><strong>Velocidade:</strong> {" "}{data.stats[5].base_stat}</div>
               </div>
 
             </div>
@@ -134,6 +131,8 @@ const App = () => {
           </div>
         )
       })}
+
+      <div className="spacer"></div>
 
       <div className="textos" id="sobre">
         <h1>Sobre</h1>
