@@ -139,17 +139,28 @@ const App = () => {
         <p>Tem alguma dúvida sobre algum Pokémon? Gostaria de descubrir quais são os status daquele Pokémon? Procure o
             nome ou número do Pokémon no Listmon e descubra.</p>
         <p>Este site foi feito para treinar o consumo de dados de APIs com ReactJs. É possível acessar o Pokeapi pelo
-            link: <a href="https://pokeapi.co/" class="link-texto" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
+            link: <a href="https://pokeapi.co/" className="link-texto" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
+      </div>
+
+      <div className="textos" id="lorem">
+        <h1>Lorem</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem vel purus fermentum cursus. Vivamus mauris nulla, volutpat lobortis mi et, varius varius turpis. Nulla sit amet dui sed sem pretium posuere et nec dui. Praesent eget bibendum risus. Integer egestas venenatis porta. Nunc pellentesque, lacus a vulputate vehicula, leo augue consequat felis, sed tristique neque ex et turpis. Cras ornare porta commodo. Mauris sollicitudin varius commodo. Aliquam a mauris sit amet libero consectetur mollis. </p>
+      </div>
+
+      <div className="textos" id="lorem">
+        <h1>Lorem 2</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem vel purus fermentum cursus. Vivamus mauris nulla, volutpat lobortis mi et, varius varius turpis. Nulla sit amet dui sed sem pretium posuere et nec dui. Praesent eget bibendum risus. Integer egestas venenatis porta. Nunc pellentesque, lacus a vulputate vehicula, leo augue consequat felis, sed tristique neque ex et turpis. Cras ornare porta commodo. Mauris sollicitudin varius commodo. Aliquam a mauris sit amet libero consectetur mollis. </p>
       </div>
 
       <div className="textos" id="contato">
         <h1>Contato</h1>
-        <p>Linkedin: <a class="link-texto" href="https://www.linkedin.com/in/maurometz" target="_blank" rel="noreferrer">linkedin.com/in/maurometz/</a> <br></br> 
-        Github: <a class="link-texto" href="https://github.com/maurometz" target="_blank" rel="noreferrer">github.com/maurometz</a> <br></br> 
+        <p>Linkedin: <a className="link-texto" href="https://www.linkedin.com/in/maurometz" target="_blank" rel="noreferrer">linkedin.com/in/maurometz/</a> <br></br> 
+        Github: <a className="link-texto" href="https://github.com/maurometz" target="_blank" rel="noreferrer">github.com/maurometz</a> <br></br> 
         Email:<br></br> maurometzoficial@gmail.com </p>
       </div>
+      
       <footer>
-        <div class="footer">
+        <div className="footer">
           <p>Criado por Mauro Metz</p>
         </div>
       </footer>

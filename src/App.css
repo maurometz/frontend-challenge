@@ -54,12 +54,12 @@ li:nth-child(3) {
   margin-top: 25%;
   margin-left: 10%;
   height: 50px;
-  font-size: 40px;
+  font-size: 30px;
   color: #D41C1C;
 }
 
 .botao-pesquisar {
-    height: 60px;
+    height: 70px;
     width: 180px;
     background: #D41C1C;
     color: white;
@@ -68,7 +68,7 @@ li:nth-child(3) {
 
 .link-texto {
     color: #D41C1C;
-    font-size: 40px;
+    font-size: 30px;
     text-align: justify;
     
 }
@@ -83,7 +83,7 @@ li:nth-child(3) {
 }
 
 p {
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 50px;
   text-align: justify;
   margin-left: 100px;
@@ -91,7 +91,7 @@ p {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .textos{
