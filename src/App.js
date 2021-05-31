@@ -6,6 +6,7 @@ import React from "react";
 import { useState } from 'react';
 import axios from "axios";
 
+
 const App = () => {
   const [pokemon, setPokemon] = useState(" ");
   const [pokemonData, setPokemonData] = useState([]);
@@ -44,7 +45,6 @@ const App = () => {
     return this.charAt(0).toUpperCase() + this.slice(1);
   }
 
-
   return (
     <div className="App">
       <section className="section-menu">
@@ -52,7 +52,7 @@ const App = () => {
           <nav className="nav-menu">
             <a className="a-imagem" href="#"><img className="imagem-link" src="https://i.ibb.co/yQmt4xW/logo.png" /></a>
             <ul className="ul-menu">
-              <li><a href="#home">Home</a></li>
+              <li className="menu"><a href="#home">Home</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
@@ -75,13 +75,13 @@ const App = () => {
           <div className="container">
 
             <div className="containerSprite">
-            <img className="imgSprite" src={data.sprites["front_default"]} />
-            <img className="imgSprite" src={data.sprites["front_shiny"]} />
+              <img className="imgSprite" src={data.sprites["front_default"]} />
+              <img className="imgSprite" src={data.sprites["front_shiny"]} />
             </div>
 
             <div className="divTable">
               <div className="divTableBody"></div>
-             
+
               <div className="divTableRow">
                 <div className="divTableCell"><strong>Nome:</strong> {" "}{data.name.capitalize()}</div>
               </div>
@@ -90,7 +90,7 @@ const App = () => {
               </div>
               <div className="divTableRow">
 
-              <div className="divTableCell"><strong>Tipo 2:</strong> </div>
+                <div className="divTableCell"><strong>Tipo 2:</strong> </div>
                 {pokemonType2 && (
                   <div className="divTableCell  tipo2">{pokemonType2.capitalize()}</div>
                 )}
@@ -106,7 +106,7 @@ const App = () => {
                 <div className="divTableCell"><strong>ID na Pokédex:</strong> {" "}{data.id}</div>
               </div>
 
-              
+
               <div className="divTableRow">
                 <div className="divTableCell"><strong>Vida:</strong> {" "}{data.stats[0].base_stat}</div>
               </div>
@@ -142,23 +142,13 @@ const App = () => {
             link: <a href="https://pokeapi.co/" className="link-texto" target="_blank" rel="noreferrer">https://pokeapi.co/</a></p>
       </div>
 
-      <div className="textos" id="lorem">
-        <h1>Lorem</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem vel purus fermentum cursus. Vivamus mauris nulla, volutpat lobortis mi et, varius varius turpis. Nulla sit amet dui sed sem pretium posuere et nec dui. Praesent eget bibendum risus. Integer egestas venenatis porta. Nunc pellentesque, lacus a vulputate vehicula, leo augue consequat felis, sed tristique neque ex et turpis. Cras ornare porta commodo. Mauris sollicitudin varius commodo. Aliquam a mauris sit amet libero consectetur mollis. </p>
-      </div>
-
-      <div className="textos" id="lorem">
-        <h1>Lorem 2</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem vel purus fermentum cursus. Vivamus mauris nulla, volutpat lobortis mi et, varius varius turpis. Nulla sit amet dui sed sem pretium posuere et nec dui. Praesent eget bibendum risus. Integer egestas venenatis porta. Nunc pellentesque, lacus a vulputate vehicula, leo augue consequat felis, sed tristique neque ex et turpis. Cras ornare porta commodo. Mauris sollicitudin varius commodo. Aliquam a mauris sit amet libero consectetur mollis. </p>
-      </div>
-
       <div className="textos" id="contato">
         <h1>Contato</h1>
-        <p>Linkedin: <a className="link-texto" href="https://www.linkedin.com/in/maurometz" target="_blank" rel="noreferrer">linkedin.com/in/maurometz/</a> <br></br> 
-        Github: <a className="link-texto" href="https://github.com/maurometz" target="_blank" rel="noreferrer">github.com/maurometz</a> <br></br> 
+        <p>Linkedin: <a className="link-texto" href="https://www.linkedin.com/in/maurometz" target="_blank" rel="noreferrer">linkedin.com/in/maurometz/</a> <br></br>
+        Github: <a className="link-texto" href="https://github.com/maurometz" target="_blank" rel="noreferrer">github.com/maurometz</a> <br></br>
         Email:<br></br> maurometzoficial@gmail.com </p>
       </div>
-      
+
       <footer>
         <div className="footer">
           <p>Criado por Mauro Metz</p>

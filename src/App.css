@@ -69,8 +69,7 @@ li:nth-child(3) {
 .link-texto {
     color: #D41C1C;
     font-size: 30px;
-    text-align: justify;
-    
+    text-align: justify; 
 }
 
 .footer p {
@@ -124,4 +123,71 @@ h1 {
   width: 200px;
   height: 200px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+.escrever-pesquisa {
+  width: 50%;
+  margin-top: 35%;
+  margin-left: 15%;
+  height: 30px;
+  font-size: 20px;
+  color: #D41C1C;
+}
+
+.botao-pesquisar {
+  height: 35px;
+  width: 130px;
+  background: #D41C1C;
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.textos{
+  text-align: center;
+}
+
+.divTableCell{
+  text-align: center;
+  font-size: 15px;
+  float: left;
+  margin: 10px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  padding-bottom: 50px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  width: 125px;
+  height: 125px;
+  margin-right: 52% ;
+  position: relative;
+}
+
+.link-texto {
+  color: #D41C1C;
+  font-size: 20px;
+  text-align: justify; 
+}
+
+.imgSprite {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
 }
